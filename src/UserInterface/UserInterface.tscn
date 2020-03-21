@@ -69,3 +69,5 @@ script = ExtResource( 8 )
 
 [node name="LoadButton" parent="PauseOverlay/PauseMenu" instance=ExtResource( 9 )]
 script = ExtResource( 10 )
+[connection signal="pressed" from="PauseOverlay/PauseMenu/SaveButton" to="PauseOverlay/PauseMenu/SaveButton" method="_on_SaveButton_pressed"]
+[connection signal="pressed" from="PauseOverlay/PauseMenu/LoadButton" to="PauseOverlay/PauseMenu/LoadButton" method="_on_LoadButton_pressed"]
